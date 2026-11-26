@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>94网红爆料吃瓜网_网红爆料视频社区_吃瓜资讯官方平台</title>
+<meta name="description" content="94网红爆料吃瓜网官方网站，专注网红爆料与吃瓜资讯的原创视频社区，提供高清爆料视频、行业观察、创作者访谈与真实口碑内容，打造值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1030'/%3E%3Ccircle cx='24' cy='26' r='7' fill='%23ff4d6d'/%3E%3Ccircle cx='42' cy='26' r='7' fill='%23ffd166'/%3E%3Cpath d='M14 46c6-10 30-10 36 0' stroke='%237c5cff' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --gc-bg:#12101c;
+  --gc-bg2:#1a1730;
+  --gc-card:#211d3a;
+  --gc-line:#332c57;
+  --gc-txt:#ece9f7;
+  --gc-dim:#a49dc4;
+  --gc-pink:#ff4d6d;
+  --gc-yellow:#ffd166;
+  --gc-violet:#7c5cff;
+  --gc-cyan:#38e1c8;
+  --gc-r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:
+    radial-gradient(900px 500px at 85% -80px,rgba(124,92,255,.28),transparent 70%),
+    radial-gradient(700px 420px at 5% 0px,rgba(255,77,109,.16),transparent 70%),
+    var(--gc-bg);
+  color:var(--gc-txt);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.32}
+p{margin:0 0 12px}
+.gc-wrap{width:min(1180px,92vw);margin:0 auto}
+.gc-scroll-pad{scroll-margin-top:132px}
+
+/* 吸顶公告 + 页头 */
+.gc-sticktop{position:sticky;top:0;z-index:80}
+.gc-notice{
+  background:linear-gradient(90deg,#ff4d6d,#7c5cff 55%,#38e1c8);
+  color:#12101c;
+  font-size:13.5px;
+  font-weight:700;
+  letter-spacing:.2px;
+}
+.gc-notice-in{display:flex;align-items:center;gap:12px;padding:9px 0;overflow:hidden}
+.gc-notice-tag{
+  flex:0 0 auto;background:#12101c;color:#ffd166;border-radius:999px;
+  padding:1px 10px;font-size:12px;letter-spacing:1px;
+}
+.gc-notice-move{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gc-notice-move b{font-weight:800}
+.gc-head{
+  background:rgba(18,16,28,.88);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--gc-line);
+}
+.gc-head-in{display:flex;align-items:center;gap:20px;min-height:66px}
+.gc-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.gc-brand-mark{
+  width:40px;height:40px;border-radius:12px;flex:0 0 auto;
+  background:conic-gradient(from 210deg,#ff4d6d,#ffd166,#38e1c8,#7c5cff,#ff4d6d);
+  display:grid;place-items:center;color:#12101c;font-weight:900;font-size:17px;
+  box-shadow:0 6px 22px rgba(124,92,255,.45);
+}
+.gc-brand-txt strong{display:block;font-size:16.5px;letter-spacing:.4px}
+.gc-brand-txt span{display:block;font-size:11px;color:var(--gc-dim);letter-spacing:2.6px}
+.gc-nav{display:flex;gap:4px;margin-left:8px;flex:1 1 auto;min-width:0}
+.gc-nav a{
+  padding:8px 11px;border-radius:10px;font-size:14px;color:var(--gc-dim);
+  transition:.22s;white-space:nowrap;
+}
+.gc-nav a:hover{color:#fff;background:rgba(124,92,255,.22)}
+.gc-tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+.gc-search{position:relative;display:flex;align-items:center}
+.gc-search input{
+  width:190px;padding:9px 34px 9px 14px;border-radius:999px;border:1px solid var(--gc-line);
+  background:#171430;color:var(--gc-txt);font-size:13.5px;outline:none;transition:.25s;
+}
+.gc-search input:focus{border-color:var(--gc-violet);width:230px;box-shadow:0 0 0 3px rgba(124,92,255,.22)}
+.gc-search button{
+  position:absolute;right:5px;width:26px;height:26px;border:0;border-radius:50%;
+  background:var(--gc-pink);color:#fff;cursor:pointer;font-size:13px;line-height:1;
+}
+.gc-burger{
+  display:none;width:42px;height:38px;border-radius:10px;border:1px solid var(--gc-line);
+  background:#1a1730;color:var(--gc-txt);font-size:16px;cursor:pointer;
+}
+.gc-search-fb{font-size:12px;color:var(--gc-cyan);min-height:16px;margin-top:6px;display:none}
+.gc-search-fb.on{display:block}
+
+/* 首屏 */
+.gc-hero{padding:52px 0 40px}
+.gc-hero-grid{display:grid;grid-template-columns:5fr 5fr;gap:36px;align-items:center}
+.gc-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.6px;
+  color:var(--gc-yellow);border:1px solid rgba(255,209,102,.4);border-radius:999px;
+  padding:4px 14px;margin-bottom:18px;background:rgba(255,209,102,.08);
+}
+.gc-hero h1{font-size:clamp(30px,4.1vw,52px);letter-spacing:-.5px}
+.gc-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(96deg,#ff4d6d,#ffd166 40%,#38e1c8);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.gc-hero-lead{color:var(--gc-dim);font-size:15.5px;margin:18px 0 20px;max-width:38em}
+.gc-hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.gc-btn{
+  display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;
+  padding:12px 24px;border-radius:999px;font-size:14.5px;font-weight:700;transition:.24s;
+  font-family:inherit;
+}
+.gc-btn-main{background:linear-gradient(96deg,#ff4d6d,#7c5cff);color:#fff;box-shadow:0 10px 28px rgba(255,77,109,.32)}
+.gc-btn-main:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(255,77,109,.45)}
+.gc-btn-ghost{background:transparent;color:var(--gc-txt);border:1px solid var(--gc-line)}
+.gc-btn-ghost:hover{border-color:var(--gc-cyan);color:var(--gc-cyan)}
+.gc-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:520px}
+.gc-stat{
+  background:linear-gradient(160deg,#241f42,#1a1730);border:1px solid var(--gc-line);
+  border-radius:14px;padding:13px 14px;
+}
+.gc-stat b{display:block;font-size:22px;color:var(--gc-yellow);letter-spacing:-.5px}
+.gc-stat span{font-size:12px;color:var(--gc-dim)}
+.gc-hero-visual{position:relative}
+.gc-hero-visual img{
+  width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:24px;
+  border:1px solid var(--gc-line);box-shadow:0 30px 70px rgba(0,0,0,.55);
+}
+.gc-hero-badge{
+  position:absolute;left:-14px;bottom:22px;background:#12101c;border:1px solid var(--gc-violet);
+  border-radius:14px;padding:10px 16px;font-size:12.5px;color:var(--gc-cyan);
+  box-shadow:0 14px 34px rgba(0,0,0,.6);
+}
+.gc-hero-badge b{color:#fff;display:block;font-size:15px}
+
+/* 通用区块 */
+.gc-sec{padding:50px 0;border-top:1px solid rgba(51,44,87,.6)}
+.gc-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:26px;flex-wrap:wrap}
+.gc-sec-head h2{font-size:clamp(22px,2.6vw,29px);letter-spacing:-.3px}
+.gc-sec-head h2 i{font-style:normal;color:var(--gc-pink);margin-right:8px}
+.gc-sec-head p{color:var(--gc-dim);font-size:13.5px;margin:0;max-width:52ch}
+.gc-tagline{
+  font-size:12px;color:var(--gc-cyan);border:1px solid rgba(56,225,200,.36);
+  border-radius:999px;padding:3px 12px;white-space:nowrap;
+}
+
+/* 焦点 + 列表视频区 */
+.gc-focus-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:start}
+.gc-focus-card{
+  background:linear-gradient(170deg,#241f42,#1a1730);border:1px solid var(--gc-line);
+  border-radius:var(--gc-r);overflow:hidden;transition:.3s;
+}
+.gc-focus-card:hover{transform:translateY(-4px);border-color:var(--gc-pink);box-shadow:0 20px 46px rgba(255,77,109,.18)}
+.gc-focus-thumb{position:relative}
+.gc-focus-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.gc-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,rgba(18,16,28,.05),rgba(18,16,28,.7));
+}
+.gc-play i{
+  width:56px;height:56px;border-radius:50%;background:rgba(255,77,109,.92);
+  display:grid;place-items:center;font-style:normal;color:#fff;font-size:19px;
+  box-shadow:0 0 0 9px rgba(255,77,109,.16);
+}
+.gc-focus-body{padding:18px 20px 20px}
+.gc-focus-body h3{font-size:19.5px;margin-bottom:8px}
+.gc-focus-body p{font-size:13.5px;color:var(--gc-dim)}
+.gc-meta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--gc-dim);margin:10px 0}
+.gc-meta span{background:#191536;border:1px solid var(--gc-line);border-radius:8px;padding:2px 9px}
+.gc-tag{color:var(--gc-yellow);border-color:rgba(255,209,102,.35)}
+.gc-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.gc-act{
+  background:#191536;border:1px solid var(--gc-line);color:var(--gc-txt);border-radius:9px;
+  padding:6px 12px;font-size:12.5px;cursor:pointer;transition:.2s;font-family:inherit;
+}
+.gc-act:hover{border-color:var(--gc-violet);color:#fff}
+.gc-act.done{border-color:var(--gc-pink);color:var(--gc-pink)}
+.gc-vlist{display:flex;flex-direction:column;gap:12px}
+.gc-vitem{
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;
+  background:#1b1834;border:1px solid var(--gc-line);border-radius:13px;padding:13px 15px;
+  transition:.26s;
+}
+.gc-vitem:hover{border-color:var(--gc-cyan);transform:translateX(4px)}
+.gc-vrank{
+  border-radius:11px;background:linear-gradient(160deg,#2b2450,#1a1730);
+  border:1px solid var(--gc-line);display:grid;place-items:center;
+  font-size:20px;font-weight:800;color:var(--gc-violet);height:64px;
+}
+.gc-vitem h4{font-size:15.5px;margin-bottom:4px}
+.gc-vitem p{font-size:12.8px;color:var(--gc-dim);margin:0 0 8px}
+.gc-vitem .gc-meta{margin:0}
+
+/* 关键词解析 */
+.gc-deep{background:linear-gradient(180deg,rgba(124,92,255,.08),transparent 60%)}
+.gc-deep-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.gc-article{
+  background:#1b1834;border:1px solid var(--gc-line);border-radius:var(--gc-r);padding:22px 24px;
+}
+.gc-article h3{font-size:17.5px;color:var(--gc-yellow);margin-bottom:10px}
+.gc-article p{font-size:13.8px;color:#cfc9e6}
+.gc-article ul{margin:0 0 12px;padding-left:20px;font-size:13.5px;color:#cfc9e6}
+.gc-article li{margin-bottom:6px}
+.gc-side-note{
+  border-left:3px solid var(--gc-cyan);background:rgba(56,225,200,.07);
+  padding:10px 14px;border-radius:0 10px 10px 0;font-size:13px;color:var(--gc-cyan);
+}
+
+/* 专题 */
+.gc-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.gc-topic{
+  background:linear-gradient(175deg,#241f42,#191634);border:1px solid var(--gc-line);
+  border-radius:var(--gc-r);padding:20px;transition:.28s;display:flex;flex-direction:column;
+}
+.gc-topic:hover{transform:translateY(-4px);border-color:var(--gc-violet)}
+.gc-topic img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:11px;margin-bottom:14px}
+.gc-topic h3{font-size:17px;margin-bottom:8px}
+.gc-topic p{font-size:13px;color:var(--gc-dim)}
+.gc-status{
+  display:inline-block;font-size:11.5px;border-radius:999px;padding:2px 10px;margin-bottom:12px;
+  background:rgba(56,225,200,.14);color:var(--gc-cyan);border:1px solid rgba(56,225,200,.35);
+}
+.gc-status.hot{background:rgba(255,77,109,.15);color:#ff8fa3;border-color:rgba(255,77,109,.4)}
+.gc-topic ul{margin:0;padding-left:18px;font-size:13px;color:#cfc9e6}
+.gc-topic li{margin-bottom:7px}
+.gc-topic li b{color:var(--gc-yellow);font-weight:600}
+
+/* 创作者 */
+.gc-author-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.gc-author{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;
+  background:#1b1834;border:1px solid var(--gc-line);border-radius:var(--gc-r);padding:18px 20px;
+  transition:.26s;
+}
+.gc-author:hover{border-color:var(--gc-pink)}
+.gc-ava{
+  width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:20px;color:#12101c;flex:0 0 auto;
+}
+.gc-author h3{font-size:16.5px;margin-bottom:4px}
+.gc-author .gc-field{font-size:12.5px;color:var(--gc-cyan);margin-bottom:8px}
+.gc-author p{font-size:12.8px;color:var(--gc-dim);margin:0 0 10px}
+.gc-author-data{display:flex;gap:14px;font-size:12px;color:var(--gc-dim);flex-wrap:wrap}
+.gc-author-data b{color:var(--gc-yellow)}
+
+/* 榜单 + 评价 */
+.gc-board-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:start}
+.gc-board{background:#1b1834;border:1px solid var(--gc-line);border-radius:var(--gc-r);overflow:hidden}
+.gc-board-tabs{display:flex;border-bottom:1px solid var(--gc-line)}
+.gc-board-tabs button{
+  flex:1;padding:13px 8px;background:transparent;border:0;color:var(--gc-dim);
+  font-size:13.5px;cursor:pointer;font-family:inherit;transition:.2s;
+}
+.gc-board-tabs button.on{color:#fff;background:linear-gradient(180deg,rgba(124,92,255,.32),transparent);font-weight:700}
+.gc-board-list{padding:12px 18px 16px}
+.gc-board-row{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed rgba(51,44,87,.8);font-size:13.5px}
+.gc-board-row:last-child{border-bottom:0}
+.gc-board-row em{font-style:normal;color:var(--gc-violet);font-weight:800}
+.gc-board-row b{color:var(--gc-yellow);font-size:12.5px;white-space:nowrap}
+.gc-board-row small{display:block;color:var(--gc-dim);font-size:11.5px}
+.gc-comments{display:flex;flex-direction:column;gap:14px}
+.gc-comment{
+  background:#1b1834;border:1px solid var(--gc-line);border-radius:13px;padding:14px 16px;position:relative;
+}
+.gc-comment::before{
+  content:"❝";position:absolute;right:16px;top:6px;font-size:26px;color:rgba(124,92,255,.4);
+}
+.gc-comment p{font-size:13.3px;margin:0 0 8px;color:#ded9f1}
+.gc-comment small{font-size:11.5px;color:var(--gc-dim)}
+.gc-stars{color:var(--gc-yellow);font-size:12.5px;letter-spacing:2px}
+
+/* 动态 / FAQ / 投稿 */
+.gc-two{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.gc-news{list-style:none;margin:0;padding:0}
+.gc-news li{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:13px 0;
+  border-bottom:1px dashed rgba(51,44,87,.9);font-size:13.8px;
+}
+.gc-news li:last-child{border-bottom:0}
+.gc-news time{color:var(--gc-cyan);font-size:12px;white-space:nowrap}
+.gc-news b{display:block;color:#fff;font-weight:600;margin-bottom:2px}
+.gc-news span{color:var(--gc-dim);font-size:12.5px}
+.gc-faq details{
+  background:#1b1834;border:1px solid var(--gc-line);border-radius:12px;padding:0 16px;margin-bottom:10px;
+}
+.gc-faq summary{
+  cursor:pointer;padding:13px 0;font-size:14.2px;font-weight:600;list-style:none;position:relative;padding-right:24px;
+}
+.gc-faq summary::-webkit-details-marker{display:none}
+.gc-faq summary::after{content:"+";position:absolute;right:0;top:12px;color:var(--gc-pink);font-size:18px}
+.gc-faq details[open] summary::after{content:"−"}
+.gc-faq p{font-size:13.2px;color:var(--gc-dim);padding-bottom:14px;margin:0}
+
+.gc-cta{
+  margin-top:26px;background:linear-gradient(100deg,rgba(255,77,109,.18),rgba(124,92,255,.2));
+  border:1px solid var(--gc-line);border-radius:var(--gc-r);padding:26px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+.gc-cta h3{font-size:19px;margin-bottom:6px}
+.gc-cta p{font-size:13.5px;color:var(--gc-dim);margin:0}
+
+/* 页脚 */
+.gc-foot{border-top:1px solid var(--gc-line);padding:44px 0 26px;background:#100e1b}
+.gc-foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.gc-foot h4{font-size:14px;margin-bottom:12px;color:var(--gc-yellow)}
+.gc-foot p,.gc-foot li{font-size:12.8px;color:var(--gc-dim);line-height:1.9}
+.gc-foot ul{list-style:none;margin:0;padding:0}
+.gc-foot a:hover{color:var(--gc-pink)}
+.gc-foot-bottom{
+  margin-top:30px;padding-top:18px;border-top:1px solid rgba(51,44,87,.8);
+  font-size:12px;color:#7d769c;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* 弹窗与 Toast */
+.gc-modal{
+  position:fixed;inset:0;background:rgba(8,7,16,.78);z-index:120;display:none;
+  align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);
+}
+.gc-modal.on{display:flex}
+.gc-modal-box{
+  background:#1b1834;border:1px solid var(--gc-line);border-radius:18px;padding:26px;
+  width:min(520px,100%);max-height:86vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.65);
+}
+.gc-modal-box h3{font-size:18px;margin-bottom:12px;color:var(--gc-yellow)}
+.gc-modal-box p{font-size:13.5px;color:#cfc9e6}
+.gc-modal-box input,.gc-modal-box textarea{
+  width:100%;margin-bottom:12px;padding:11px 13px;border-radius:10px;border:1px solid var(--gc-line);
+  background:#141127;color:var(--gc-txt);font-size:13.5px;font-family:inherit;outline:none;resize:vertical;
+}
+.gc-modal-box input:focus,.gc-modal-box textarea:focus{border-color:var(--gc-violet)}
+.gc-modal-close{
+  float:right;background:transparent;border:0;color:var(--gc-dim);font-size:20px;cursor:pointer;line-height:1;
+}
+.gc-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#ff4d6d;color:#fff;padding:11px 22px;border-radius:999px;font-size:13.5px;font-weight:700;
+  opacity:0;pointer-events:none;transition:.3s;z-index:200;box-shadow:0 12px 30px rgba(255,77,109,.4);
+}
+.gc-toast.on{opacity:1;transform:translate(-50%,0)}
+.gc-top{
+  position:fixed;right:22px;bottom:24px;width:46px;height:46px;border-radius:50%;
+  border:1px solid var(--gc-line);background:#201b3c;color:var(--gc-cyan);font-size:18px;
+  cursor:pointer;display:none;z-index:100;box-shadow:0 10px 26px rgba(0,0,0,.5);
+}
+.gc-top.on{display:block}
+
+/* 响应式 */
+@media(max-width:980px){
+  .gc-hero-grid,.gc-focus-grid,.gc-deep-grid,.gc-author-grid,.gc-board-wrap,.gc-two{grid-template-columns:1fr}
+  .gc-topic-grid{grid-template-columns:1fr 1fr}
+  .gc-foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .gc-nav{
+    position:absolute;left:0;right:0;top:100%;background:#151228;border-bottom:1px solid var(--gc-line);
+    flex-direction:column;padding:12px;display:none;
+  }
+  .gc-nav.open{display:flex}
+  .gc-burger{display:block}
+  .gc-head-in{position:relative;flex-wrap:wrap;gap:12px;padding-top:10px;padding-bottom:10px}
+  .gc-search input{width:150px}
+  .gc-search input:focus{width:170px}
+  .gc-tools{margin-left:auto}
+}
+@media(max-width:720px){
+  .gc-hero{padding:34px 0 26px}
+  .gc-topic-grid,.gc-foot-grid{grid-template-columns:1fr}
+  .gc-stats{grid-template-columns:1fr}
+  .gc-hero-badge{left:8px}
+  .gc-vitem{grid-template-columns:52px minmax(0,1fr)}
+  .gc-vrank{height:56px;font-size:17px}
+  .gc-sec{padding:36px 0}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶区：公告条 + 页头 -->
+<div class="gc-sticktop">
+  <div class="gc-notice">
+    <div class="gc-wrap gc-notice-in">
+      <span class="gc-notice-tag">官方发布</span>
+      <div class="gc-notice-move">
+        <b>新增</b>「2026 冬季爆料线索榜」已上线，本期收录 42 条有据可查的公开线索；<b>11月24日</b> 开启创作者投稿通道，报名即可参与月度吃瓜创意挑战。
+      </div>
+    </div>
+  </div>
+  <header class="gc-head">
+    <div class="gc-wrap gc-head-in">
+      <a class="gc-brand" href="#top">
+        <span class="gc-brand-mark">94</span>
+        <span class="gc-brand-txt">
+          <strong>94网红爆料吃瓜网</strong>
+          <span>GUACHE · OFFICIAL</span>
+        </span>
+      </a>
+      <nav class="gc-nav" id="gcNav">
+        <a href="#gcFocus">焦点爆料</a>
+        <a href="#gcDeep">关键词解析</a>
+        <a href="#gcTopics">专题企划</a>
+        <a href="#gcAuthors">创作者</a>
+        <a href="#gcBoard">热度榜单</a>
+        <a href="#gcNews">企业动态</a>
+        <a href="#gcFaq">帮助中心</a>
+      </nav>
+      <div class="gc-tools">
+        <form class="gc-search" id="gcSearchForm" onsubmit="return false;">
+          <input type="search" id="gcSearchInput" placeholder="搜爆料 / 作者 / 专题" aria-label="站内搜索">
+          <button type="submit" aria-label="搜索">🔍</button>
+        </form>
+        <button class="gc-burger" id="gcBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="gc-wrap"><div class="gc-search-fb" id="gcSearchFb"></div></div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="gc-hero">
+    <div class="gc-wrap gc-hero-grid">
+      <div>
+        <span class="gc-kicker">官方网站 · 原创爆料视频社区</span>
+        <h1>94网红爆料吃瓜网<br><em>让每一条爆料都有出处</em></h1>
+        <p class="gc-hero-lead">
+          作为深耕网红爆料与吃瓜资讯垂直领域的原创视频品牌，94网红爆料吃瓜网官方网站为创作者与用户搭建高品质内容生态：我们只做可核验的公开信息整理，用高清影像、时间线与多方视角还原事件全貌，坚持真实、克制、有温度的表达。
+        </p>
+        <div class="gc-hero-btns">
+          <a class="gc-btn gc-btn-main" href="#gcFocus">进入焦点爆料 →</a>
+          <a class="gc-btn gc-btn-ghost" href="#gcAuthors">认识创作者</a>
+          <button class="gc-btn gc-btn-ghost" data-gc-open="submit">我要投稿</button>
+        </div>
+        <div class="gc-stats">
+          <div class="gc-stat"><b>4,860+</b><span>累计原创爆料视频</span></div>
+          <div class="gc-stat"><b>132 万</b><span>社区注册用户</span></div>
+          <div class="gc-stat"><b>96.4%</b><span>线索核实通过率</span></div>
+        </div>
+      </div>
+      <div class="gc-hero-visual">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 680'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23231d44'/%3E%3Cstop offset='1' stop-color='%23120f24'/%3E%3C/linearGradient%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff4d6d'/%3E%3Cstop offset='1' stop-color='%237c5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='680' fill='url(%23bg)'/%3E%3Ccircle cx='640' cy='120' r='150' fill='%237c5cff' opacity='.22'/%3E%3Ccircle cx='120' cy='560' r='170' fill='%23ff4d6d' opacity='.18'/%3E%3Cg stroke='%233a3168' stroke-width='1'%3E%3Cpath d='M0 170h800M0 310h800M0 450h800M0 590h800'/%3E%3Cpath d='M160 0v680M340 0v680M520 0v680M700 0v680'/%3E%3C/g%3E%3Crect x='90' y='120' width='380' height='230' rx='18' fill='%231c1836' stroke='%234d4185'/%3E%3Crect x='112' y='146' width='120' height='12' rx='6' fill='%23ffd166'/%3E%3Crect x='112' y='176' width='300' height='9' rx='4.5' fill='%235c5192'/%3E%3Crect x='112' y='198' width='250' height='9' rx='4.5' fill='%23483f78'/%3E%3Crect x='112' y='220' width='272' height='9' rx='4.5' fill='%23483f78'/%3E%3Ccircle cx='150' cy='296' r='18' fill='url(%23g1)'/%3E%3Crect x='184' y='286' width='130' height='10' rx='5' fill='%237a6fb0'/%3E%3Crect x='184' y='304' width='90' height='8' rx='4' fill='%23483f78'/%3E%3Crect x='420' y='200' width='290' height='180' rx='16' fill='%23251f45' stroke='%23544a8f'/%3E%3Cpath d='M520 260l46 34-46 34z' fill='%23ff4d6d'/%3E%3Crect x='462' y='330' width='200' height='10' rx='5' fill='%235c5192'/%3E%3Crect x='462' y='350' width='140' height='9' rx='4.5' fill='%23483f78'/%3E%3Cg transform='translate(120,420)'%3E%3Crect width='230' height='150' rx='14' fill='%231c1836' stroke='%234d4185'/%3E%3Crect x='18' y='20' width='14' height='110' rx='7' fill='%2338e1c8'/%3E%3Crect x='44' y='52' width='14' height='78' rx='7' fill='%237c5cff'/%3E%3Crect x='70' y='34' width='14' height='96' rx='7' fill='%23ffd166'/%3E%3Crect x='96' y='68' width='14' height='62' rx='7' fill='%23ff4d6d'/%3E%3Crect x='122' y='44' width='14' height='86' rx='7' fill='%2338e1c8'/%3E%3Crect x='148' y='78' width='14' height='52' rx='7' fill='%237c5cff'/%3E%3C/g%3E%3Cg transform='translate(420,420)'%3E%3Crect width='290' height='150' rx='14' fill='%23251f45' stroke='%23544a8f'/%3E%3Ccircle cx='56' cy='56' r='22' fill='url(%23g1)'/%3E%3Crect x='94' y='42' width='150' height='11' rx='5.5' fill='%237a6fb0'/%3E%3Crect x='94' y='64' width='100' height='9' rx='4.5' fill='%23483f78'/%3E%3Crect x='26' y='104' width='238' height='9' rx='4.5' fill='%23483f78'/%3E%3Crect x='26' y='124' width='190' height='9' rx='4.5' fill='%233a3366'/%3E%3C/g%3E%3Ctext x='90' y='620' font-family='sans-serif' font-size='19' fill='%23a49dc4' letter-spacing='4'%3E94 GUACHE · 爆料档案室%3C/text%3E%3C/svg%3E" alt="94网红爆料吃瓜网品牌主视觉：爆料档案室与多方视角视频框架">
+        <div class="gc-hero-badge"><b>线索核实 3 步走</b>来源 · 时间 · 多方回应</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点 + 视频列表 -->
+  <section class="gc-sec gc-scroll-pad" id="gcFocus">
+    <div class="gc-wrap">
+      <div class="gc-sec-head">
+        <div>
+          <h2><i>◆</i>焦点爆料与今日吃瓜视频</h2>
+          <p>94网红爆料吃瓜网每天固定更新焦点爆料与吃瓜视频，所有条目均由编辑核验公开出处，标注信息时间与当事方回应情况。</p>
+        </div>
+        <span class="gc-tagline">原创 · 高清 · 正版授权</span>
+      </div>
+
+      <div class="gc-focus-grid">
+        <article class="gc-focus-card">
+          <div class="gc-focus-thumb">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23261f4a'/%3E%3Cstop offset='1' stop-color='%23120f24'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg opacity='.5' stroke='%234d4185'%3E%3Ccircle cx='640' cy='90' r='120' fill='none'/%3E%3Ccircle cx='640' cy='90' r='72' fill='none'/%3E%3C/circle%3E%3C/g%3E%3Crect x='60' y='70' width='330' height='310' rx='16' fill='%23231d44' stroke='%23544a8f'/%3E%3Crect x='84' y='96' width='80' height='80' rx='40' fill='%23ff4d6d'/%3E%3Ctext x='124' y='148' text-anchor='middle' font-family='sans-serif' font-size='34' fill='%23fff'%3E爆%3C/text%3E%3Crect x='182' y='104' width='170' height='13' rx='6.5' fill='%23ffd166'/%3E%3Crect x='182' y='132' width='120' height='10' rx='5' fill='%235c5192'/%3E%3Crect x='84' y='200' width='280' height='10' rx='5' fill='%23554a8c'/%3E%3Crect x='84' y='224' width='250' height='10' rx='5' fill='%23483f78'/%3E%3Crect x='84' y='248' width='265' height='10' rx='5' fill='%23483f78'/%3E%3Crect x='84' y='288' width='96' height='30' rx='15' fill='%237c5cff'/%3E%3Crect x='192' y='288' width='96' height='30' rx='15' fill='%233a3168'/%3E%3Crect x='430' y='110' width='310' height='230' rx='16' fill='%23251f45' stroke='%23544a8f'/%3E%3Cpath d='M560 190l50 36-50 36z' fill='%2338e1c8'/%3E%3Crect x='460' y='286' width='250' height='10' rx='5' fill='%235c5192'/%3E%3Crect x='460' y='308' width='170' height='9' rx='4.5' fill='%23483f78'/%3E%3Ctext x='60' y='416' font-family='sans-serif' font-size='16' fill='%23a49dc4' letter-spacing='2'%3E焦点爆料 · 时间线还原%3C/text%3E%3C/svg%3E" alt="焦点爆料视频封面：一条爆料的时间线还原与多方回应记录">
+            <div class="gc-play"><i>▶</i></div>
+          </div>
+          <div class="gc-focus-body">
+            <h3>一条爆料如何被核实：从截图到多方回应的 72 小时</h3>
+            <p>本期焦点视频完整记录一次网红爆料从线索提交、交叉比对到当事方回应的全过程，展示94网红爆料吃瓜网的核实流程与信息来源标注规范，帮助用户分辨事实与传闻。</p>
+            <div class="gc-meta">
+              <span class="gc-tag">深度核实</span>
+              <span>作者：镜头外老唐</span>
+              <span>播放 12.8 万</span>
+              <span>点赞 6,412</span>
+              <span>收藏 2,180</span>
+            </div>
+            <div class="gc-acts">
+              <button class="gc-act" data-gc-like>♥ 点赞 <span class="gc-like-num">6412</span></button>
+              <button class="gc-act" data-gc-fav>☆ 收藏</button>
+              <button class="gc-act" data-gc-copy>复制链接</button>
+              <button class="gc-act" data-gc-open="report">举报反馈</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="gc-vlist">
+          <article class="gc-vitem">
+            <div class="gc-vrank">01</div>
+            <div>
+              <h4>直播间里的“全网最低价”到底怎么来？拆解三场带货爆料的真实链路</h4>
+              <p>对比公开价格与场次数据，还原选品、议价与话术的完整链路。</p>
+              <div class="gc-meta"><span class="gc-tag">行业观察</span><span>作者：吃瓜不吐皮</span><span>播放 9.6 万</span><span>点赞 4,308</span></div>
+            </div>
+          </article>
+          <article class="gc-vitem">
+            <div class="gc-vrank">02</div>
+            <div>
+              <h4>网红探店视频中的拍摄套路：一份本地餐饮老板的对照记录</h4>
+              <p>同一家店在镜头里与镜头外的差异，从业者逐条对照说明。</p>
+              <div class="gc-meta"><span class="gc-tag">深度测评</span><span>作者：街角观察员</span><span>播放 8.1 万</span><span>点赞 3,772</span></div>
+            </div>
+          </article>
+          <article class="gc-vitem">
+            <div class="gc-vrank">03</div>
+            <div>
+              <h4>三分钟看懂：一条爆料短视频是怎么被剪辑出来的</h4>
+              <p>素材比例、字幕节奏与信息取舍，剪辑台上的取舍逻辑。</p>
+              <div class="gc-meta"><span class="gc-tag">创作幕后</span><span>作者：剪辑间阿禾</span><span>播放 7.4 万</span><span>点赞 3,105</span></div>
+            </div>
+          </article>
+          <article class="gc-vitem">
+            <div class="gc-vrank">04</div>
+            <div>
+              <h4>被误读的三天：一次澄清视频的传播路径复盘</h4>
+              <p>从首发到反转，逐小时记录传播节点与评论情绪变化。</p>
+              <div class="gc-meta"><span class="gc-tag">情感故事</span><span>作者：夜航笔记</span><span>播放 6.8 万</span><span>点赞 2,940</span></div>
+            </div>
+          </article>
+          <article class="gc-vitem">
+            <div class="gc-vrank">05</div>
+            <div>
+              <h4>吃瓜不吃人：社区讨论里最容易忽略的五条边界</h4>
+              <p>整理社区公约与真实讨论案例，说明理性吃瓜的底线。</p>
+              <div class="gc-meta"><span class="gc-tag">社区公约</span><span>作者：阿梨在场</span><span>播放 5.3 万</span><span>点赞 2,416</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 800+ 字，分 4 个 H3 -->
+  <section class="gc-sec gc-deep gc-scroll-pad" id="gcDeep">
+    <div class="gc-wrap">
+      <div class="gc-sec-head">
+        <div>
+          <h2><i>◆</i>94网红爆料吃瓜网关键词解析</h2>
+          <p>为什么一个爆料社区需要被认真解释？我们把“94网红爆料吃瓜网”拆成四个层次，讲清这个品牌在做什么、不做什么。</p>
+        </div>
+        <span class="gc-tagline">深度解读 · 品牌自述</span>
+      </div>
+      <div class="gc-deep-grid">
+        <article class="gc-article">
+          <h3>一、“94”是编号，也是态度</h3>
+          <p>94网红爆料吃瓜网这个名字里，“94”并不是随手取的数字。它来自早期团队内部的一本线索登记簿编号：每一条爆料进门，都会被赋予一个唯一编号，从 001 一路排到 094 时，登记簿已经写满了整整一年。团队决定把 094 留在品牌名里，因为它提醒我们——爆料不是情绪的燃料，而是一份需要编号、归档、追踪的责任。</p>
+          <p>在94网红爆料吃瓜网的实际运营中，这条传统仍然保留。官网每一条爆料视频都会在页面上标注线索编号、首次出现时间与最近核实时间，用户点开任何一条内容，都能看到“这条信息是什么时候进来的、后来发生了什么变化”。对吃瓜资讯来说，这件事听起来朴素，却是最难长期坚持的部分。因为追热点很快，追事实很慢；我们选择慢一点。</p>
+          <p>这也是94网红爆料吃瓜网在网红爆料垂直领域的基本立场：我们不生产传闻，只整理可追溯的公开信息；我们不替当事人下结论，只把多方回应摆在同一个时间轴上。品牌词“94”因此既是一个编号，也是一种自我约束，提醒团队每一次点击发布按钮之前，先回到那份登记簿的原点。</p>
+        </article>
+
+        <article class="gc-article">
+          <h3>二、“网红爆料”是一门需要方法的活儿</h3>
+          <p>很多人以为爆料内容拼的是手速，其实拼的是方法。94网红爆料吃瓜网的内容团队把一条爆料拆成四个动作：来源登记、交叉比对、当事方联系、更新标注。来源登记要求提供可回溯的公开出处；交叉比对至少找到两个独立信息源；当事方联系是给被提及者一次回应的机会；更新标注则是在内容发布后持续跟踪，把新出现的公开信息补进时间线。</p>
+          <p>这套方法的代价是速度。别人一小时内发出来的吃瓜视频，我们可能需要三天。但94网红爆料吃瓜网相信，用户真正长期需要的不是更快的传闻，而是更少被误导的时间。以2026年夏季的一次直播带货争议为例，我们的视频在上线前做了三轮核对，最终在画面里同时放入商家公示、平台规则与消费者反馈三种视角，评论区里讨论的焦点从“谁黑谁”慢慢转向“规则该怎么定”，这就是方法带来的差别。</p>
+          <p>为了让方法可复用，官网还提供公开的核实清单与剪辑规范：哪些信息必须打码、哪些截图必须标注获取时间、哪些表述必须加上“据公开信息”前缀。这些细节并不起眼，却构成了94网红爆料吃瓜网作为一个专业爆料平台的基础设施，也让新加入的创作者能在同一套标准下协作。</p>
+        </article>
+
+        <article class="gc-article">
+          <h3>三、“吃瓜”可以是有温度的共同体验</h3>
+          <p>吃瓜这个词天然带一点戏谑，但94网红爆料吃瓜网希望它不止于此。社区里很多用户并不是来围观别人的难堪，而是想在信息混乱时找到一个相对可靠的坐标系。因此官网在评论区之外，专门设置了“旁观者视角”栏目：由普通用户写下自己看到同一件事时的感受与判断，篇幅不长，语气各异，但都要求尊重当事人。</p>
+          <p>我们也经历过教训。2025年冬天一条未经核实的爆料在站内快速传播，虽然当晚就被下线并发布更正说明，但仍有用户受到影响。那次之后，94网红爆料吃瓜网把“当事人回应通道”提到了更显眼的位置，任何人认为内容存在偏差，都可以通过官网的反馈入口提交说明，编辑部承诺在 24 小时内回应。这个通道上线至今，已处理一千余条反馈，其中三成促成了内容更正。</p>
+          <p>温度还体现在语言上。我们要求视频标题不使用侮辱性称谓，不对未公开的私人信息做推测，不把家庭关系当作话题素材。吃瓜可以是轻松的，但不该是刻薄的。94网红爆料吃瓜网的社区公约第一条写得很直白：讨论事件，不审判人生。这条规则看似限制了流量，却让我们在持续运营中收获了更稳定的用户口碑。</p>
+        </article>
+
+        <article class="gc-article">
+          <h3>四、“网”是一张需要长期维护的内容生态</h3>
+          <p>名字最后的“网”，指向的是94网红爆料吃瓜网真正想做的事：把分散的创作者、用户、品牌方与事实核查者连成一张网。官网目前有创作者入驻、专题共建、线索众包三条通道，任何人提交的公开线索都会进入统一队列，由编辑与签约创作者共同跟进。我们不做单点爆款，而是希望每一周的更新都能被后来的人检索、引用与复盘。</p>
+          <p>在内容生态层面，94网红爆料吃瓜网坚持三个“不”：不购买独家隐私素材，不参与任何形式的话题竞价，不对当事人施加回应压力。与此同时，我们也提供正向支持：为优质创作者提供拍摄补贴与剪辑协作，为社区志愿者提供事实核查培训，为品牌方提供合规的传播建议。一个吃瓜平台能做到行业领先，靠的不是胆子大，而是边界清楚。</p>
+          <p>截至2026年11月，94网红爆料吃瓜网官方网站已累计上线原创爆料视频四千八百余条，签约与特邀创作者八十七位，专题企划四十余期。数据不算惊人，但每一条都能打开看来源，每一期都能找到更新记录。对我们而言，这就是“持续运营”最具体的含义：不追求一时的喧哗，而是让这张网一年比一年结实，让每一个来吃瓜的人，离开时都比来时更清楚一点。</p>
+          <div class="gc-side-note">编辑部说明：本文所述流程与数据均为品牌内部公开运营口径，欢迎通过页脚反馈入口提出疑问。</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="gc-sec gc-scroll-pad" id="gcTopics">
+    <div class="gc-wrap">
+      <div class="gc-sec-head">
+        <div>
+          <h2><i>◆</i>专题企划 · 把爆料放回时间线</h2>
+          <p>每个专题由94网红爆料吃瓜网编辑部与创作者共同维护，持续更新，不追一次性热度，只做可回看的吃瓜资料库。</p>
+        </div>
+        <span class="gc-tagline">持续更新中</span>
+      </div>
+      <div class="gc-topic-grid">
+        <article class="gc-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23352a5e'/%3E%3Cstop offset='1' stop-color='%23151328'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23t1)'/%3E%3Cpath d='M0 300q120-90 240-20t240-60 160 40v140H0z' fill='%237c5cff' opacity='.28'/%3E%3Cg stroke='%23ffd166' stroke-width='3' fill='none'%3E%3Cpath d='M70 260h110l50-90 60 150 50-70h150'/%3E%3C/g%3E%3Ccircle cx='180' cy='260' r='9' fill='%23ff4d6d'/%3E%3Ccircle cx='290' cy='320' r='9' fill='%2338e1c8'/%3E%3Ccircle cx='410' cy='180' r='9' fill='%23ffd166'/%3E%3Ctext x='60' y='90' font-family='sans-serif' font-size='26' fill='%23ece9f7'%3E时间线专题%3C/text%3E%3Ctext x='60' y='124' font-family='sans-serif' font-size='15' fill='%23a49dc4'%3E每条爆料都有前后文%3C/text%3E%3C/svg%3E" alt="专题封面：爆料事件时间线曲线与节点标记">
+          <span class="gc-status hot">更新至第 6 期</span>
+          <h3>直播带货争议全记录</h3>
+          <p>从选品公示到售后回应，按周整理公开信息，附带平台规则对照。</p>
+          <ul>
+            <li><b>01</b> 三场直播的价格公示逐条比对</li>
+            <li><b>02</b> 商家与平台的公开回应汇总</li>
+            <li><b>03</b> 消费者反馈中的高频疑问</li>
+          </ul>
+        </article>
+        <article class="gc-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23203a3a'/%3E%3Cstop offset='1' stop-color='%23131022'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23t2)'/%3E%3Cg fill='none' stroke='%2338e1c8' stroke-width='2.5' opacity='.8'%3E%3Crect x='60' y='190' width='120' height='120' rx='10'/%3E%3Crect x='200' y='150' width='120' height='160' rx='10'/%3E%3Crect x='340' y='210' width='120' height='100' rx='10'/%3E%3Crect x='480' y='170' width='100' height='140' rx='10'/%3E%3C/g%3E%3Ccircle cx='120' cy='120' r='34' fill='%23ff4d6d' opacity='.75'/%3E%3Ctext x='60' y='80' font-family='sans-serif' font-size='26' fill='%23ece9f7'%3E探店观察%3C/text%3E%3Ctext x='60' y='112' font-family='sans-serif' font-size='15' fill='%23a49dc4'%3E镜头内外两套画面%3C/text%3E%3C/svg%3E" alt="专题封面：四家门店轮廓与镜头观察圆点，代表探店对照">
+          <span class="gc-status">长期更新</span>
+          <h3>探店镜头内外对照计划</h3>
+          <p>联合本地餐饮从业者，用同一套拍摄清单对照网红探店视频的呈现差异。</p>
+          <ul>
+            <li><b>01</b> 十二家门店的真实出餐记录</li>
+            <li><b>02</b> 剪辑节奏与话术拆解</li>
+            <li><b>03</b> 商家视角的三条建议</li>
+          </ul>
+        </article>
+        <article class="gc-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23422a45'/%3E%3Cstop offset='1' stop-color='%23141125'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23t3)'/%3E%3Cg%3E%3Ccircle cx='200' cy='200' r='90' fill='none' stroke='%23ffd166' stroke-width='3'/%3E%3Ccircle cx='200' cy='200' r='56' fill='none' stroke='%23ff4d6d' stroke-width='3'/%3E%3Ccircle cx='200' cy='200' r='22' fill='%23ff4d6d'/%3E%3Cpath d='M200 60v50M200 290v50M60 200h50M290 200h50' stroke='%23a49dc4' stroke-width='3'/%3E%3C/g%3E%3Cg%3E%3Crect x='340' y='140' width='240' height='16' rx='8' fill='%235c5192'/%3E%3Crect x='340' y='180' width='200' height='14' rx='7' fill='%23483f78'/%3E%3Crect x='340' y='216' width='220' height='14' rx='7' fill='%23483f78'/%3E%3Crect x='340' y='252' width='160' height='14' rx='7' fill='%233a3366'/%3E%3C/g%3E%3Ctext x='60' y='356' font-family='sans-serif' font-size='15' fill='%23a49dc4'%3E自媒体核实训练营%3C/text%3E%3C/svg%3E" alt="专题封面：视角靶心图形与核实训练条目列表">
+          <span class="gc-status">报名中</span>
+          <h3>创作者核实训练营</h3>
+          <p>面向内容创作者的公开课程，讲清来源、比对与更正三个基本功。</p>
+          <ul>
+            <li><b>01</b> 如何找到可回溯的公开出处</li>
+            <li><b>02</b> 交叉比对的四种常见方法</li>
+            <li><b>03</b> 内容更正的分寸与表达</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="gc-sec gc-scroll-pad" id="gcAuthors">
+    <div class="gc-wrap">
+      <div class="gc-sec-head">
+        <div>
+          <h2><i>◆</i>签约创作者 · 真实的人做真实的内容</h2>
+          <p>94网红爆料吃瓜网的创作者来自不同城市与职业，擅长领域覆盖核实、剪辑、访谈与城市观察，所有档案均可点击查看。</p>
+        </div>
+        <span class="gc-tagline">4 位本期推荐</span>
+      </div>
+      <div class="gc-author-grid">
+        <article class="gc-author" data-gc-author="镜头外老唐">
+          <div class="gc-ava" style="background:linear-gradient(140deg,#ff4d6d,#ffd166)">唐</div>
+          <div>
+            <h3>镜头外老唐</h3>
+            <div class="gc-field">擅长：事实核实 · 时间线梳理</div>
+            <p>前调查记者，2023年加入94网红爆料吃瓜网。习惯先画时间线再开摄像机，做过的爆料视频里没有一句“据说”。相信慢工出细活，也相信观众看得出差别。</p>
+            <div class="gc-author-data"><span>作品 <b>186</b></span><span>粉丝 <b>24.6万</b></span><span><button class="gc-act" data-gc-author-btn="镜头外老唐">查看档案</button></span></div>
+          </div>
+        </article>
+        <article class="gc-author" data-gc-author="吃瓜不吐皮">
+          <div class="gc-ava" style="background:linear-gradient(140deg,#7c5cff,#38e1c8)">瓜</div>
+          <div>
+            <h3>吃瓜不吐皮</h3>
+            <div class="gc-field">擅长：行业观察 · 直播带货</div>
+            <p>扎根电商行业九年，做过运营也做过客服。在94网红爆料吃瓜网主要更新带货争议解析，喜欢把话术拆成表格，用数据说话，评论区常被问“能不能再细一点”。</p>
+            <div class="gc-author-data"><span>作品 <b>142</b></span><span>粉丝 <b>18.9万</b></span><span><button class="gc-act" data-gc-author-btn="吃瓜不吐皮">查看档案</button></span></div>
+          </div>
+        </article>
+        <article class="gc-author" data-gc-author="剪辑间阿禾">
+          <div class="gc-ava" style="background:linear-gradient(140deg,#38e1c8,#7c5cff)">禾</div>
+          <div>
+            <h3>剪辑间阿禾</h3>
+            <div class="gc-field">擅长：创作幕后 · 剪辑教学</div>
+            <p>影视后期出身，擅长把复杂的剪辑决策讲成普通人能听懂的话。她拍的幕后视频从不炫技，只展示取舍：为什么这段要留白，为什么那句话不能配鼓点。</p>
+            <div class="gc-author-data"><span>作品 <b>98</b></span><span>粉丝 <b>11.2万</b></span><span><button class="gc-act" data-gc-author-btn="剪辑间阿禾">查看档案</button></span></div>
+          </div>
+        </article>
+        <article class="gc-author" data-gc-author="夜航笔记">
+          <div class="gc-ava" style="background:linear-gradient(140deg,#ffd166,#ff4d6d)">夜</div>
+          <div>
+            <h3>夜航笔记</h3>
+            <div class="gc-field">擅长：情感故事 · 传播复盘</div>
+            <p>自由撰稿人，喜欢记录事件里被忽略的普通人。在94网红爆料吃瓜网持续更新“被误读的三天”系列，用克制的文字还原传播中的人，不站队，也不冷眼。</p>
+            <div class="gc-author-data"><span>作品 <b>77</b></span><span>粉丝 <b>9.4万</b></span><span><button class="gc-act" data-gc-author-btn="夜航笔记">查看档案</button></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 榜单 + 评价 -->
+  <section class="gc-sec gc-scroll-pad" id="gcBoard">
+    <div class="gc-wrap">
+      <div class="gc-sec-head">
+        <div>
+          <h2><i>◆</i>热度榜单与真实用户评价</h2>
+          <p>榜单每周一更新，统计口径为播放、收藏与核验通过率加权；评价来自社区用户，展示前已做打码处理。</p>
+        </div>
+        <span class="gc-tagline">数据每周更新</span>
+      </div>
+      <div class="gc-board-wrap">
+        <div class="gc-board">
+          <div class="gc-board-tabs" id="gcBoardTabs">
+            <button class="on" data-board="hot">热度榜</button>
+            <button data-board="new">新人榜</button>
+            <button data-board="praise">口碑榜</button>
+          </div>
+          <div class="gc-board-list" id="gcBoardList"></div>
+        </div>
+        <div class="gc-comments">
+          <article class="gc-comment">
+            <p>以前刷爆料就是看个热闹，现在会先看有没有标注来源。这个习惯是94网红爆料吃瓜网教会我的，谢谢你们愿意慢一点。</p>
+            <small>用户「南岸散步」 · <span class="gc-stars">★★★★★</span> · 关注 8 个月</small>
+          </article>
+          <article class="gc-comment">
+            <p>专题做得比视频还好看，直播带货那一期的时间线我截图收藏了，跟朋友吵架的时候直接甩图。</p>
+            <small>用户「不喝奶茶的猫」 · <span class="gc-stars">★★★★★</span> · 关注 1 年</small>
+          </article>
+          <article class="gc-comment">
+            <p>建议把举报入口再放大一点，手机端有时候要滑一会儿才看到。内容本身没得说。</p>
+            <small>用户「键盘别敲太响」 · <span class="gc-stars">★★★★☆</span> · 关注 3 个月</small>
+          </article>
+          <article class="gc-comment">
+            <p>我是本地开店的，探店对照那个系列帮了大忙，客人现在会先问是不是实拍，生意反而更稳了。</p>
+            <small>用户「巷口第七家」 · <span class="gc-stars">★★★★★</span> · 关注 6 个月</small>
+          </article>
+          <article class="gc-comment">
+            <p>剪辑幕后那几期对新手太友好了，我照着自己的视频试了留白，完播率真的涨了一点点。</p>
+            <small>用户「小满剪片」 · <span class="gc-stars">★★★★☆</span> · 关注 4 个月</small>
+          </article>
+          <article class="gc-comment">
+            <p>有一次我的评论被误删了，反馈后当天下午就恢复了，还回了说明。这种态度值得信赖。</p>
+            <small>用户「清晨六点半」 · <span class="gc-stars">★★★★★</span> · 关注 2 年</small>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 + FAQ + 投稿 -->
+  <section class="gc-sec gc-scroll-pad" id="gcNews">
+    <div class="gc-wrap">
+      <div class="gc-sec-head">
+        <div>
+          <h2><i>◆</i>企业动态与帮助中心</h2>
+          <p>94网红爆料吃瓜网的最新官方发布、更新日志与常见问题，投稿与反馈入口同步开放。</p>
+        </div>
+        <span class="gc-tagline">官方发布</span>
+      </div>
+      <div class="gc-two">
+        <div>
+          <h3 style="font-size:17px;margin-bottom:14px;color:var(--gc-cyan)">近期企业动态</h3>
+          <ul class="gc-news">
+            <li><time>2026-11-20</time><div><b>「冬季爆料线索榜」正式上线</b><span>本期收录 42 条有据可查的公开线索，同步开放用户投票，投票结果将影响下月专题选题。</span></div></li>
+            <li><time>2026-11-14</time><div><b>创作者核实训练营第二期开放报名</b><span>课程增至六节，新增“更正表达”实操环节，报名后可在个人中心查看课表。</span></div></li>
+            <li><time>2026-11-06</time><div><b>官网播放器升级：支持逐帧回看</b><span>针对核实类视频增加逐帧按钮，方便创作者截图比对，移动端同步支持。</span></div></li>
+            <li><time>2026-10-28</time><div><b>社区公约 3.0 发布</b><span>新增“不推测未公开私人信息”条款，并公开过去半年的反馈处理数据。</span></div></li>
+          </ul>
+        </div>
+        <div class="gc-faq" id="gcFaq">
+          <h3 style="font-size:17px;margin-bottom:14px;color:var(--gc-cyan)">常见问题</h3>
+          <details open>
+            <summary>94网红爆料吃瓜网的内容来源是什么？</summary>
+            <p>所有爆料视频均基于公开可回溯的信息整理，页面会标注线索编号、首次出现时间与核实状态，不采用未获授权的私人素材。</p>
+          </details>
+          <details>
+            <summary>如何提交一条爆料线索？</summary>
+            <p>通过页面中的“我要投稿”按钮提交，填写事件概述与公开出处即可。编辑部会在三个工作日内回复是否进入核实流程。</p>
+          </details>
+          <details>
+            <summary>内容出现偏差怎么申请更正？</summary>
+            <p>在对应视频页点击“举报反馈”，选择“信息更正”并附上说明。我们承诺 24 小时内回应，核实后会在原页面标注更新记录。</p>
+          </details>
+          <details>
+            <summary>创作者入驻需要什么条件？</summary>
+            <p>需要至少三条原创视频作品，并同意遵守社区公约与核实规范。入驻后可使用官网提供的剪辑协作与专题共建资源。</p>
+          </details>
+          <details>
+            <summary>榜单的数据统计口径是怎样的？</summary>
+            <p>热度榜按播放、收藏与核验通过率加权；新人榜统计入驻 90 天内创作者的更新频率与完播表现；口碑榜取用户评价均分。</p>
+          </details>
+          <details>
+            <summary>是否提供视频下载？</summary>
+            <p>官网仅对签约创作者开放原始素材下载，普通用户可在授权范围内分享页面链接，请勿二次剪辑传播。</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="gc-cta">
+        <div>
+          <h3>你手里也有一条值得被认真对待的线索？</h3>
+          <p>94网红爆料吃瓜网长期开放投稿与反馈通道，欢迎带着出处来，我们一起把它讲清楚。</p>
+        </div>
+        <div class="gc-hero-btns" style="margin:0">
+          <button class="gc-btn gc-btn-main" data-gc-open="submit">立即投稿</button>
+          <button class="gc-btn gc-btn-ghost" data-gc-open="report">反馈问题</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- S8 页脚 -->
+<footer class="gc-foot">
+  <div class="gc-wrap">
+    <div class="gc-foot-grid">
+      <div>
+        <div class="gc-brand" style="margin-bottom:12px">
+          <span class="gc-brand-mark">94</span>
+          <span class="gc-brand-txt"><strong>94网红爆料吃瓜网</strong><span>GUACHE · OFFICIAL</span></span>
+        </div>
+        <p>94网红爆料吃瓜网官方网站，深耕网红爆料与吃瓜资讯垂直领域的原创视频社区。我们坚持真实、可核验、有温度的内容表达，为创作者与用户搭建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#gcFocus">焦点爆料</a></li>
+          <li><a href="#gcDeep">关键词解析</a></li>
+          <li><a href="#gcTopics">专题企划</a></li>
+          <li><a href="#gcBoard">热度榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与共建</h4>
+        <ul>
+          <li><a href="#" data-gc-open="submit">线索投稿</a></li>
+          <li><a href="#gcAuthors">创作者入驻</a></li>
+          <li><a href="#gcFaq">帮助中心</a></li>
+          <li><a href="#" data-gc-open="report">举报反馈</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌信息</h4>
+        <ul>
+          <li>运营主体：94内容工作室</li>
+          <li>合作邮箱：hello@guache94.example</li>
+          <li>内容更新：每日 10:00 / 20:00</li>
+          <li>备案号：示例备案 2026-094 号</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gc-foot-bottom">
+      <span>© 2026 94网红爆料吃瓜网 官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌 · 原创 · 高清 · 社区 · 品质</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹窗 -->
+<div class="gc-modal" id="gcModal">
+  <div class="gc-modal-box">
+    <button class="gc-modal-close" id="gcModalClose" aria-label="关闭">×</button>
+    <div id="gcModalBody"></div>
+  </div>
+</div>
+<div class="gc-toast" id="gcToast"></div>
+<button class="gc-top" id="gcTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端导航 */
+  var burger = document.getElementById('gcBurger');
+  var nav = document.getElementById('gcNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '✕' : '☰';
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('open');
+      burger.textContent = '☰';
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* Toast */
+  var toast = document.getElementById('gcToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('on'); }, 2200);
+  }
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('gcSearchForm');
+  var searchInput = document.getElementById('gcSearchInput');
+  var searchFb = document.getElementById('gcSearchFb');
+  var searchPool = ['焦点爆料','关键词解析','直播带货争议','探店对照','创作者核实训练营','镜头外老唐','吃瓜不吐皮','剪辑间阿禾','夜航笔记','热度榜','社区公约','投稿通道'];
+  searchForm.addEventListener('submit', function(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      searchFb.textContent = '请输入爆料关键词、作者名或专题名称';
+      searchFb.classList.add('on');
+      return;
+    }
+    var hit = searchPool.filter(function(s){ return s.indexOf(kw) !== -1; });
+    if(hit.length){
+      searchFb.textContent = '找到 ' + hit.length + ' 个相关结果：' + hit.slice(0,4).join(' / ');
+    }else{
+      searchFb.textContent = '暂未收录「' + kw + '」，可在投稿通道提交线索，编辑部会尽快核验。';
+    }
+    searchFb.classList.add('on');
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){ searchFb.classList.remove('on'); }
+  });
+
+  /* 点赞 / 收藏 / 复制 */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('[data-gc-like]');
+    if(like){
+      var numEl = like.querySelector('.gc-like-num');
+      var n = parseInt(numEl.textContent.replace(/,/g,''), 10);
+      if(like.classList.toggle('done')){
+        n += 1;
+        showToast('已点赞，感谢支持原创内容');
+      }else{
+        n -= 1;
+        showToast('已取消点赞');
+      }
+      numEl.textContent = n.toLocaleString('en-US');
+      return;
+    }
+    var fav = e.target.closest('[data-gc-fav]');
+    if(fav){
+      var on = fav.classList.toggle('done');
+      fav.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      showToast(on ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+      return;
+    }
+    var copy = e.target.closest('[data-gc-copy]');
+    if(copy){
+      var link = '94网红爆料吃瓜网 · 焦点爆料《一条爆料如何被核实》';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){ showToast('链接已复制'); }).catch(function(){ showToast('复制失败，请手动选择文本'); });
+      }else{
+        showToast('已生成分享文案：' + link);
+      }
+      return;
+    }
+  });
+
+  /* 榜单切换 */
+  var boardData = {
+    hot: [
+      {t:'一条爆料如何被核实：72 小时全记录',s:'镜头外老唐 · 播放 12.8 万',v:'9,812'},
+      {t:'直播间“全网最低价”的真实链路',s:'吃瓜不吐皮 · 播放 9.6 万',v:'8,640'},
+      {t:'探店镜头内外对照：十二家门店',s:'街角观察员 · 播放 8.1 万',v:'7,205'},
+      {t:'一条短视频是怎么被剪辑出来的',s:'剪辑间阿禾 · 播放 7.4 万',v:'6,733'},
+      {t:'被误读的三天：澄清视频复盘',s:'夜航笔记 · 播放 6.8 万',v:'5,918'}
+    ],
+    new: [
+      {t:'新人首作：我如何核查一张截图',s:'新创作者 阿梨在场 · 上线 3 天',v:'1,204'},
+      {t:'本地小店的探店实拍记录',s:'新创作者 巷口第七家 · 上线 5 天',v:'986'},
+      {t:'社区公约 3.0 的逐条解读',s:'新创作者 键盘别敲太响 · 上线 6 天',v:'874'},
+      {t:'一次误传的完整更正说明',s:'新创作者 清晨六点半 · 上线 8 天',v:'761'},
+      {t:'我的第一个时间线手稿',s:'新创作者 南岸散步 · 上线 9 天',v:'642'}
+    ],
+    praise: [
+      {t:'社区公约讨论：吃瓜不吃人',s:'口碑均分 4.9 · 评价 1,286 条',v:'4.9'},
+      {t:'创作者核实训练营公开课',s:'口碑均分 4.8 · 评价 942 条',v:'4.8'},
+      {t:'探店镜头内外对照计划',s:'口碑均分 4.8 · 评价 806 条',v:'4.8'},
+      {t:'直播带货争议全记录专题',s:'口碑均分 4.7 · 评价 731 条',v:'4.7'},
+      {t:'剪辑幕后：留白的分寸',s:'口碑均分 4.7 · 评价 618 条',v:'4.7'}
+    ]
+  };
+  var boardList = document.getElementById('gcBoardList');
+  var boardTabs = document.getElementById('gcBoardTabs');
+  function renderBoard(key){
+    boardList.innerHTML = boardData[key].map(function(item, i){
+      return '<div class="gc-board-row"><em>' + (i+1) + '</em><div>' + item.t + '<small>' + item.s + '</small></div><b>' + item.v + '</b></div>';
+    }).join('');
+  }
+  renderBoard('hot');
+  boardTabs.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-board]');
+    if(!btn) return;
+    Array.prototype.forEach.call(boardTabs.children, function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    renderBoard(btn.dataset.board);
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('gcModal');
+  var modalBody = document.getElementById('gcModalBody');
+  var modalClose = document.getElementById('gcModalClose');
+  function openModal(html){
+    modalBody.innerHTML = html;
+    modal.classList.add('on');
+  }
+  function closeModal(){ modal.classList.remove('on'); }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  document.addEventListener('click', function(e){
+    var openBtn = e.target.closest('[data-gc-open]');
+    if(openBtn){
+      e.preventDefault();
+      var type = openBtn.getAttribute('data-gc-open');
+      if(type === 'submit'){
+        openModal('<h3>投稿通道</h3><p>请填写线索概述与公开出处，编辑部将在三个工作日内回复。请勿提交未获授权的私人素材。</p><input placeholder="你的称呼 / 联系方式"><textarea rows="3" placeholder="事件概述（100 字以内）"></textarea><textarea rows="2" placeholder="公开出处链接或说明"></textarea><button class="gc-btn gc-btn-main" id="gcSubmitBtn">提交线索</button>');
+      }else if(type === 'report'){
+        openModal('<h3>举报与反馈</h3><p>如发现信息偏差、侵权或违规内容，请说明具体位置，我们承诺 24 小时内回应。</p><textarea rows="3" placeholder="请描述问题与对应页面"></textarea><button class="gc-btn gc-btn-main" id="gcReportBtn">提交反馈</button>');
+      }
+      return;
+    }
+    var authorBtn = e.target.closest('[data-gc-author-btn]');
+    if(authorBtn){
+      var name = authorBtn.getAttribute('data-gc-author-btn');
+      var card = authorBtn.closest('.gc-author');
+      var field = card.querySelector('.gc-field').textContent;
+      var bio = card.querySelector('p').textContent;
+      var data = card.querySelector('.gc-author-data').textContent.replace(/\s+/g,' ').trim();
+      openModal('<h3>' + name + '</h3><p>' + field + '</p><p>' + bio + '</p><p style="color:#ffd166">' + data + '</p><button class="gc-btn gc-btn-main" data-gc-open="submit">向作者投稿</button>');
+      return;
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    if(e.target.id === 'gcSubmitBtn' || e.target.id === 'gcReportBtn'){
+      closeModal();
+      showToast(e.target.id === 'gcSubmitBtn' ? '线索已提交，感谢你的信任' : '反馈已收到，我们会在 24 小时内回应');
+    }
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('gcTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 560){ topBtn.classList.add('on'); }else{ topBtn.classList.remove('on'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+})();
+</script>
+</body>
+                                                                          </html>
